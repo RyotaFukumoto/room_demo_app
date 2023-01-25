@@ -15,5 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val catList = catDao.getAll()
         print(catList)
+        catDao.deletes(catList)
+        val catDeleteList = catDao.getAll()
+        print(catDeleteList)
     }
 }
